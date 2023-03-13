@@ -11,7 +11,7 @@ public class Main {
             p.r = inp.nextInt();
             p.s = inp.nextInt();
 //            System.out.println("P"+p+"Q"+q+"R"+r+"S"+s);
-            System.out.printf("%.5f",p.combination());
+            System.out.printf("%.5f\n",p.combination());
         }while ((p.p > 0) && (p.q > 0) && (p.r > 0) && (p.s > 0));
     }
 }
