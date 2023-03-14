@@ -5,14 +5,20 @@ public class Main {
     public static void main(String[] args) {
         Scanner inp = new Scanner(System.in);
 //        int p, q,r,s;
-        BinomialCoeff p = new BinomialCoeff();
+        BinomialCoeff pal = new BinomialCoeff();
         do{
-            p.p = inp.nextInt();
-            p.q = inp.nextInt();
-            p.r = inp.nextInt();
-            p.s = inp.nextInt();
+            try{
+                pal.p = inp.nextInt();
+                pal.q = inp.nextInt();
+                pal.r = inp.nextInt();
+                pal.s = inp.nextInt();
 //            System.out.println("P"+p+"Q"+q+"R"+r+"S"+s);
-            System.out.println(p.combination());
-        }while ((p.p > 0) && (p.q > 0) && (p.r > 0) && (p.s > 0));
+                System.out.println(pal.combination());
+            }
+            catch(StackOverflowError error){
+                break;
+            }
+
+        }while ((pal.p > 0) && (pal.q > 0) && (pal.r > 0) && (pal.s > 0));
     }
 }
