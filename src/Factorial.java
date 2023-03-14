@@ -1,6 +1,6 @@
 import java.math.BigDecimal;
 import java.math.BigInteger;
-public class Factorial {
+class Factorial {
 //    private int fact;
     private BigDecimal factor;
 

@@ -1,7 +1,7 @@
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
-public class BinomialCoeff extends Factorial{
+class BinomialCoeff extends Factorial{
     public int p, q, r, s;
     private BigDecimal first, second;
     public BigDecimal combination(){
