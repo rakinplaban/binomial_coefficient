@@ -1,3 +1,4 @@
+//import java.math.BigDecimal;
 import java.util.*;
 import java.lang.*;
 public class Main {
@@ -11,7 +12,7 @@ public class Main {
             p.r = inp.nextInt();
             p.s = inp.nextInt();
 //            System.out.println("P"+p+"Q"+q+"R"+r+"S"+s);
-            System.out.printf("%.5f\n",p.combination());
+            System.out.println(p.combination());
         }while ((p.p > 0) && (p.q > 0) && (p.r > 0) && (p.s > 0));
     }
 }
